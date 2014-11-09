@@ -1,4 +1,8 @@
-\chapter{Introductory Chapter} 
+
+%%%%%%%%%%%%%%%%
+% NEW CHAPTER! %
+%%%%%%%%%%%%%%%%
+\chapter{Second Chapter}
 
 \begin{chapquote}{Author's name, \textit{Source of this quote}}
 ``This is a quote and I don't know who said this.''
@@ -7,27 +11,8 @@
 \section{Section heading}
 \lipsum[1-2]
 
-1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-2. Duis ac mi magna, a consectetur elit.
-
-3. Curabitur posuere erat \emph{dignissim ligula euismod} ut euismod nisi.
-
-4. Fusce vulputate facilisis neque, et ornare mauris mattis vel.
-
-5. Mauris sit amet nulla mi, vitae rutrum ante.
-
-6. Maecenas quis nulla risus, vel tincidunt ligula.
-
-7. Nullam ac enim neque, non \emph{dapibus} mauris.
-
-8. Integer volutpat leo a orci suscipit eget rhoncus urna eleifend.
-
-\noindent Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis risus ante, auctor et pulvinar non, posuere ac lacus. Praesent egestas nisi id metus rhoncus ac lobortis sem hendrerit. Etiam et sapien eget lectus interdum posuere sit amet ac urna\footnote{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis risus ante, auctor et pulvinar non, posuere ac lacus.}:
-
 \subsection{Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
-\lipsum[1-3]
-
+\lipsum[1-2]
 
 \begin{lstlisting}[language=XML]
 <?xml version="1.0" encoding="utf-8"?>
@@ -84,25 +69,20 @@ public class Test {
 </xs:schema>
 \end{lstlisting}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis risus ante, auctor et pulvinar non, posuere ac lacus. Praesent egestas nisi id metus rhoncus ac lobortis sem hendrerit. Etiam et sapien eget lectus interdum posuere sit amet ac urna.
+\lipsum[1-2]
 
 \subsection{Lorem ipsum dolor sit amet, consectetur adipiscing.}
-\lipsum[1-1]
-\begin{figure}[H]
-	\centering
-    \includegraphics[width=0.2\textwidth]{test-img.pdf}
-\end{figure}
-\lipsum[1-1]
+\lipsum[1-2]
 
 \subsection{Lorem ipsum dolor sit amet}
-\lipsum[1-5]
+\lipsum[1-2]
 
 \subsection{Lorem ipsum dolor sit amet, auctor et pulvinar non}
-\lipsum[1-5]
+\lipsum[1-2] 
 
 
 \section{Another section heading}
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+\lipsum[1-2]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Sample table                                        %
@@ -136,37 +116,28 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 \end{itemize}
  
 
-\lipsum[1-1]
-\begin{wrapfigure}{r}{0.3\textwidth}
-  \vspace{-20pt}
-  \begin{center}
-    \includegraphics[width=0.3\textwidth]{test-img.pdf}
-  \end{center}
-  \vspace{-20pt}
-  \caption{A wrapped test image}
-\end{wrapfigure}
-
-
-\lipsum[1-2]
-
 \noindent Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis risus ante, auctor et pulvinar non, posuere ac lacus. Praesent egestas nisi id metus rhoncus ac lobortis sem hendrerit. Etiam et sapien eget lectus interdum posuere sit amet ac urna\footnote{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis risus ante, auctor et pulvinar non, posuere ac lacus.}:
 
 \subsection{Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
-\lipsum[1-2]
+\lipsum[1-1]
+
+{\hfill\includegraphics[width=0.4\textwidth]{test-img.pdf}\hfill}
+
+\lipsum[1-1]
 
 \subsection{Lorem ipsum dolor sit amet, consectetur adipiscing}
 \lipsum[1-2]
 
-\begin{longtable}{|l|r|c|p{2cm}|}
- \hline
- Linksbündige Spalte.&Rechtsbündige Spalte&Zentrierte Spalte&Parbox\\
- \hline
- Kurzer Text.&Kurzer Text.&Kurzer Text.&Kurzer Text.\\
- \hline
- Text.&Text.&Text.&In diesem Felde nun ein elendslanger text, um Umbrüche innerhalb eines Feldes zu erzeugen.\\
- \hline
- Text.&Text.&Text.&der Befehl $\backslash$vspace*\{\} weiter oben im Quellcode hat einen Umbruch vor dieser Zeile bewirkt.\\
- \hline
-\end{longtable}
+%
+% If pdf has more than 1 page
+% 
+\includepdf[pages={1}]{test-img.pdf}
 
-
+%
+% Include as graphics
+%
+\begin{figure}[ht]
+	\centering
+    \includegraphics[width=0.5\textwidth, angle=20]{test-img.pdf}
+    \caption{This is some caption text}
+\end{figure}
